@@ -62,23 +62,7 @@ public class MapleMapFactory {
     private final ReentrantLock lock = new ReentrantLock();
     private static final Map<Integer, List<AbstractLoadedMapleLife>> customLife = new HashMap<>();
     private int channel;
-    private final Map<Integer, Integer> DeStorymaps = new HashMap<Integer, Integer>() {
-        {
-            put(230000000, 0);// 水下世界
-            // put(211000000, 0);//冰封雪域
-            put(200082200, 0);//通天塔底下1层
-            put(221000000, 0);//地球防御本部
-            put(222000000, 0);//童话村
-            put(240000000, 0);//神木村
-            put(260000000, 0);//阿里安特
-            put(261000000, 0);//玛家提亚
-            put(250000000, 0);//武陵
-            //put(240010501, 0);//祭司之林
-            put(221000300, 0);//地球防御本部司令部
-            //put(211040300, 0);//雪域尖锐的绝壁
-
-        }
-    };
+    private final Map<Integer, Integer> DeStorymaps = new HashMap<Integer, Integer>();
 
     public static int loadCustomLife() {
         customLife.clear(); // init
